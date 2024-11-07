@@ -1,0 +1,2 @@
+person_id,patient_id,firstname,lastname,age,gender,mobileno,email,address_id,username,password,spec
+1,1,Amey,Parange,24,Male,0123456789,amey8172@gmail.com,1,parangea,admin1234,Dentist

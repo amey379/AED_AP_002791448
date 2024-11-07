@@ -1,0 +1,42 @@
+person_id,firstname,lastname,age,gender,mobileno,email,address_id,username,password,pat,doc,rec,sadm,hadm
+1,Amey,Parange,25,Male,0123456789,amey8172@gmail.com,1,parangea,admin1234,1,1,1,1,1
+2,Akash,Meena,25,Male,8876543210,akashmeena@gmail.com,2,akashmeena,akashmeena1,1,0,0,0,0
+3,Sagar,Renuke,23,Male,9876543101,sagarrenuke@gmail.com,6,sagar,sagarrenuke,1,0,0,0,0
+
+person_id,patient_id,firstname,lastname,age,gender,mobileno,email,address_id,username,password
+1,1,Amey,Parange,25,Male,0123456789,amey8172@gmail.com,1,parangea,admin1234
+2,2,Akash,Meena,25,Male,8876543210,akashmeena@gmail.com,2,akashmeena,akashmeena1
+3,3,Sagar,Renuke,23,Male,9876543101,sagarrenuke@gmail.com,6,sagar,sagarrenuke
+
+address_id, street, unit, city, state, zipcode
+1,27 Longwood Ave,4,Brookline,MA,02446
+2,133 Peterborough St,2,Boston,MA,02215
+3,25 Longwood Ave,1,Brookline,MA,02446
+4,25 Longwood Ave,1,Brookline,MA,02446
+9,Peterborough,1,Boston,MA,02215
+6,65 Alphanso St,2,Boston,MA,02108
+
+
+
+userid,type,password,personid
+parangea,System Admin,admin1234,1
+parangea,Patient,admin1234,1
+parangea,Doctor,admin1234,1
+parangea,Reception,admin1234,1
+parangea,Hospital Admin,admin1234,1
+parangea,Community Admin,admin1234,1
+akashmeena,Patient,akashmeena,2
+sagar,Patient,sagarrenuke,2
+
+hospitalid,name,mobileno,email,desc,address_id
+1,Brookline Dentals,9087654321,brooklinedents@gmail.com,Dental Clinic,3
+
+btnupdate.setEnabled(false);
+btnedit.setEnabled(true);
+btnview.setEnabled(true);
+btnsregister.setEnabled(true);
+btnsearch.setEnabled(true);
+btndelete.setEnabled(true);
+
+btnsregister.setEnabled(false);
+btnupdate.setEnabled(false);

@@ -1,0 +1,8 @@
+person_id,firstname,lastname,age,gender,mobileno,email,address_id,username,password,pat,doc,rec,sadm,hadm
+1,Amey,Parange,24,Male,0123456789,amey8172@gmail.com,1,parangea,admin1234,null,1,null,null,null
+2,Akash,Meena,25,Male,8876543210,akashmeena@gmail.com,2,akashmeena,akashmeena1,1,0,0,0,0
+3,Sagar,Renuke,23,Male,9876543101,sagarrenuke@gmail.com,6,sagar,sagarrenuke,1,0,0,0,0
+4,Kartik,Bawal,24,Male,3214567890,kartikbaw@gmail.com,7,bawal,bawal1234,1,0,0,0,0
+5,Pratik,Hariya,25,Male,1234567890,pratik@gmail.com,46,pratik,admin1234,1,0,0,0,0
+6,abbs,asf,13,Female,1212121212,adad@fdf.asdf,21,ameya,ameypara,1,0,0,0,0
+7,Abhi,Patil,12,Male,1234567890,abhi@had.dm,12,abhipatil,abhipatil,1,0,0,0,0

@@ -1,0 +1,142 @@
+CREATE TABLE `expressmeddb`.`enterprise` (
+  `ent_id` INT NOT NULL AUTO_INCREMENT,
+  `ent_type` VARCHAR(50) NULL,
+  `name` VARCHAR(50) NULL,
+  `email` VARCHAR(50) NULL,
+  `add_id` int,
+  PRIMARY KEY (`ent_id`));
+  
+  
+CREATE TABLE `expressmeddb`.`useraccount` (
+  `username` VARCHAR(50) NOT NULL,
+  `per_id` VARCHAR(50) NULL,
+  `password` VARCHAR(50) NULL,
+  `role_name` VARCHAR(45) NULL,
+  PRIMARY KEY (`username`));
+  
+
+CREATE TABLE `expressmeddb`.`organization` (
+  `org_id` INT NOT NULL AUTO_INCREMENT,
+  `ent_id` INT NULL,
+  `org_type` VARCHAR(50) NULL,
+  `email` VARCHAR(50) NULL,
+  PRIMARY KEY (`org_id`));
+
+CREATE TABLE `organizationtypes` (
+  `ent_type` varchar(50) DEFAULT NULL,
+  `org_type` varchar(50) DEFAULT NULL
+) ;
+
+CREATE TABLE `expressmeddb`.`role` (
+  `role_id` INT NOT NULL AUTO_INCREMENT,
+  `ent_id` INT NULL,
+  `role_type` VARCHAR(50) NULL,
+  PRIMARY KEY (`role_id`));
+  
+CREATE TABLE `roletypes` (
+  `ent_type` varchar(50) DEFAULT NULL,
+  `role_type` varchar(50) DEFAULT NULL
+);
+
+  
+CREATE TABLE `expressmeddb`.`address` (
+  `add_id` INT NOT NULL AUTO_INCREMENT,
+  `street` VARCHAR(100) NULL,
+  `unit` VARCHAR(20) NULL,
+  `city` VARCHAR(50) NULL,
+  `state` VARCHAR(50) NULL,
+  `zipcode` VARCHAR(20) NULL,
+  PRIMARY KEY (`add_id`));
+
+<<<<<<< HEAD
+CREATE TABLE `expressmeddb`.`Inventory` (
+  `inv_id` INT NOT NULL AUTO_INCREMENT,
+  `product_id` INT NULL,
+  `quantity` INT NULL,
+  
+  PRIMARY KEY (`inv_id`));
+  
+CREATE TABLE `expressmeddb`.`Batch` (
+  `batch_id` INT NOT NULL,
+  `product_id` INT NULL,
+  `mgf_date` date,
+  `quantity` INT NULL,
+  
+  PRIMARY KEY (`batch_id`));
+  
+CREATE TABLE `expressmeddb`.`Order` (
+  `order_id` INT NOT NULL,
+  `username` VARCHAR(50) NULL,
+  `f_ent_id` INT NULL,
+  `orderprice` INT NOT NULL,
+  `ord_date` Date,
+  `priorty` INT NULL,
+  `reason` VARCHAR(100) NULL,
+  
+  PRIMARY KEY (`order_id`));
+
+CREATE TABLE `expressmeddb`.`Order_item` (
+  `order_id` INT NOT NULL,
+  `product_id` INT NULL,
+  `qty` INT NOT NULL,
+  `tot_item_price` INT NULL,
+  
+  PRIMARY KEY (`order_id`));
+
+
+CREATE TABLE `expressmeddb`.`Delivery` (
+  `order_id` INT NOT NULL,
+  `emp_id` INT NULL,
+  `src_location` INT NOT NULL,
+  `dest_location` INT NULL,
+  `Delivery_date` date NULL,
+  
+  PRIMARY KEY (`order_id`));
+=======
+
+
+
+CREATE TABLE `expressmeddb`.`person` (
+  `per_id` INT NOT NULL AUTO_INCREMENT,
+  `add_id` INT NULL,
+  `fname` VARCHAR(45) NULL,
+  `lname` VARCHAR(45) NULL,
+  `email` VARCHAR(45) NULL,
+  `mobileno` VARCHAR(45) NULL,
+  `gender` VARCHAR(45) NULL,
+  `age` INT NULL,
+  PRIMARY KEY (`per_id`));
+  
+CREATE TABLE `expressmeddb`.`customer` (
+  `cust_id` INT NOT NULL AUTO_INCREMENT,
+  `per_id` INT NULL,
+  PRIMARY KEY (`cust_id`));
+  
+CREATE TABLE `expressmeddb`.`employee` (
+  `emp_id` INT NOT NULL AUTO_INCREMENT,
+  `per_id` INT NULL,
+  `ent_id` INT NULL,
+  PRIMARY KEY (`emp_id`));
+
+CREATE TABLE `expressmeddb`.`doctor` (
+  `dr_id` INT NOT NULL AUTO_INCREMENT,
+  `per_id` INT NULL,
+  `ent_id` INT NULL,
+  PRIMARY KEY (`dr_id`));
+select * from product;
+select * from inventory;
+  
+  
+CREATE TABLE `expressmeddb`.`Product` (
+  `product_id` INT NOT NULL AUTO_INCREMENT,
+  `ent_id` INT NULL,
+  `name` VARCHAR(50) NOT NULL,
+  `price` INT NULL,
+  `weight` INT NULL,
+  `validity` INT NULL,
+  `desc1` VARCHAR(100) NULL,
+  
+  PRIMARY KEY (`product_id`));
+  
+>>>>>>> main
+
